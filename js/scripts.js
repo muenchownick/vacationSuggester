@@ -29,18 +29,21 @@ $(document).ready(function(){
 
   if (islandScore > cityScore && islandScore > religionScore) {
     alert("WE ARE GOING TO COSTA RICO");
-    $("")
+    $("#showresult").addClass(".showCostaRica");
 
   } else if (cityScore > islandScore && cityScore > religionScore) {
     alert("WE ARE GOING TO LONDON");
-
+    $("#showresult").addClass(".showLondon")
+// post image of place
 
   } else if (religionScore > islandScore && religionScore > cityScore) {
     alert("WE ARE GOING TO MECCA");
-
+    $("#showresult").addClass(".showMecca")
+// post image of place
 
   } else {
     alert("What happened!?");
+// post picute of what happened
 
 };
     $("#resetbtn").click(function(){

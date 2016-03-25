@@ -8,8 +8,17 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="header">
+      <h1>Where in the world!?</h1>
+    </div>
+    <div class="container-fluid">
+      <!-- left column -->
+      <div class="col-sm-2" id="leftBar">
+        <img src="img/leftBarSign.jpg" alt="houses and city landscape">
+      </div>
       <!-- questions 1 -->
+      <!-- questions column (middle column) -->
+      <div class="col-sm-8">
       <div class="questions1">
         <h2>Where do you like to sight see?</h2>
         <form>
@@ -32,6 +41,7 @@
             </label>
           </form>
         </div>
+      </div>
         <!-- questions 2 -->
         <div class="questions2">
           <h2>How much are we drinking?</h2>
@@ -56,6 +66,7 @@
               <br>
             </form>
           </div>
+        </div>
           <!-- questions 3 -->
           <div class="questions3">
             <h2>What kind of activity do you like?</h2>
@@ -80,6 +91,7 @@
                 <br>
               </form>
             </div>
+          </div>
             <!-- questions 4 -->
             <div class="questions4">
               <h2>Do you enjoy spring break?</h2>
@@ -104,6 +116,7 @@
                   <br>
                 </form>
               </div>
+            </div>
               <!-- questions 5 -->
               <div class="questions5">
                 <h2>What kind of car would you like to drive?</h2>
@@ -130,9 +143,22 @@
                     <input class="btn btn-default" type="reset" value="Reset" id="resetbtn">
                   </form>
                 </div>
+              </div>
+                <!-- end of questions div -->
+                <div id="showresult">
+                  <img src="img/costaRica.jpeg">
+                  <img src="img/london.jpg">
+                  <img src="img/mecca.jpg">
 
+                  <p> yo whatup g
+                  </p>
 
-      </div>
+                </div>
+            </div>
+            <!-- end of questions column -->
+            <div class="col-sm-2" id="rightBar">
+              <img src="img/rightBarSign.jpg" alt="sightseeing">
+            </div>
     </div>
 </body>
 </html>
