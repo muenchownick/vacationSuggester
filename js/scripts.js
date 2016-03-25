@@ -20,7 +20,38 @@ $(document).ready(function(){
     var result = $("input:radio[name=question5]:checked").val();
         addScore(result);
 
-  });
+// HOW DO I MAKE THE SCORE RESETT!!!!!!??????
+//     var reset = function(){
+//       $(islandScore).val("0");
+//     };
+  // $("islandScore").val("0");
+
+
+  if (islandScore > cityScore && islandScore > religionScore) {
+    alert("WE ARE GOING TO COSTA RICO");
+    $("")
+
+  } else if (cityScore > islandScore && cityScore > religionScore) {
+    alert("WE ARE GOING TO LONDON");
+
+
+  } else if (religionScore > islandScore && religionScore > cityScore) {
+    alert("WE ARE GOING TO MECCA");
+
+
+  } else {
+    alert("What happened!?");
+
+};
+    $("#resetbtn").click(function(){
+      islandScore = 0;
+      cityScore = 0;
+      religionScore = 0;
+      alert("reset values ;)");
+
+});
+
+ });
 });
 
   var addScore = function (result) {
