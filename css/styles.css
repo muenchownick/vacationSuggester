@@ -1,9 +1,7 @@
-.container {
-
-}
-div {
-
-}
+/* *** why is body background not working?? ***
+body {
+  background-color: red;
+}*/
 .header {
   text-align: center;
   background-color: #CCCCFF;

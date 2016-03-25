@@ -20,42 +20,44 @@ $(document).ready(function(){
     var result = $("input:radio[name=question5]:checked").val();
         addScore(result);
 
-// HOW DO I MAKE THE SCORE RESETT!!!!!!??????
-//     var reset = function(){
-//       $(islandScore).val("0");
-//     };
-  // $("islandScore").val("0");
-
+        // to randomize radio button **doesn't work**
+        // var questions = $("#questions");
+        // 
+        // questions.html(
+        //     questions.find("label").sort(function(){
+        //         return Math.round(Math.random())-0.5;
+        //     })
+        // );
+      // end of randomize buttons
 
   if (islandScore > cityScore && islandScore > religionScore) {
     alert("WE ARE GOING TO COSTA RICO");
-    $("#showresult").addClass(".showCostaRica");
+    // $("#showresult").append(".showCostaRica");
 
   } else if (cityScore > islandScore && cityScore > religionScore) {
     alert("WE ARE GOING TO LONDON");
-    $("#showresult").addClass(".showLondon")
+    // $("#showresult").addClass(".showLondon")
 // post image of place
 
   } else if (religionScore > islandScore && religionScore > cityScore) {
     alert("WE ARE GOING TO MECCA");
-    $("#showresult").addClass(".showMecca")
+    // $("#showresult").addClass(".showMecca")
 // post image of place
 
   } else {
     alert("What happened!?");
 // post picute of what happened
-
 };
+
     $("#resetbtn").click(function(){
       islandScore = 0;
       cityScore = 0;
       religionScore = 0;
-      alert("reset values ;)");
-
-});
-
+      alert("reset values ;)"
+    });
  });
 });
+// document function end here
 
   var addScore = function (result) {
     if (result === "city") {
@@ -69,11 +71,11 @@ $(document).ready(function(){
     }
   };
 
-  // to randomize radio button
-  // var questions = $("#questions");
-  //
-  // questions.html(
-  //     questions.find("label").sort(function(){
-  //         return Math.round(Math.random())-0.5;
-  //     })
-  // );
+  to randomize radio button
+  var questions = $("#questions");
+
+  questions.html(
+      questions.find("label").sort(function(){
+          return Math.round(Math.random())-0.5;
+      })
+  );
